@@ -11,6 +11,11 @@ BuildRequires:	python%{pyver}dist(pip)
 BuildRequires:	python%{pyver}dist(wheel)
 BuildRequires:	python%{pyver}dist(setuptools)
 BuildArch:	noarch
+
+%prep -a
+# Upstream installs tox.ini as data_files into /usr/testing.
+sed -i '/data_files/d' setup.py
+
 %description
 A fast and complete Python implementation of Markdown.
 
