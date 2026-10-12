@@ -1,6 +1,6 @@
 Name:		python-markdown2
 Version:	2.5.5
-Release:	1
+Release:	2
 Summary:	A fast and complete Python implementation of Markdown
 License:	MIT
 Group:		Development/Python
